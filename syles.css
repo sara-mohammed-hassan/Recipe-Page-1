@@ -1,0 +1,171 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f3e5d8;
+    color: #50423a;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+}
+
+.Recipt-Page {
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 30px;
+    max-width: 700px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.Recipt-Page img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.Recipt-Page h1 {
+    font-size: 2.5em;
+    color: #2c2c2c;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.Recipt-Page p {
+    font-size: 1em;
+    line-height: 1.5;
+    color: #5a4a42;
+    font-weight: bold;
+    opacity: .9;
+}
+
+.Preparation-Time {
+    background-color: #fff7fc;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.Preparation-Time h2 {
+    font-size: 1.3em;
+    color: #6b193c;
+    margin-bottom: 10px;
+    font-weight: bold;
+
+}
+
+.Preparation-Time span,
+.Instructions span {
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.Preparation-Time ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.Preparation-Time li {
+    margin-bottom: 5px;
+    color: #5a4a42;
+    padding-left: 20px;
+    position: relative;
+}
+
+.Preparation-Time li::before {
+    content: "•";
+    color: #6b193c;
+    position: absolute;
+    left: 0;
+}
+
+.Ingredients ul,
+.Instructions ol {
+    list-style-type: none;
+    padding: 0;
+}
+
+.Ingredients h2,
+.Instructions h2 {
+    font-size: 1.5em;
+    color: #854632;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.Ingredients li,
+.Instructions li {
+    margin-bottom: 10px;
+    color: #5a4a42;
+    padding-left: 20px;
+    position: relative;
+}
+
+.Instructions li {
+    counter-increment: my-counter;
+
+
+
+}
+
+.Instructions ol li::before {
+    content: counter(my-counter) ".";
+    position: absolute;
+    left: 0;
+    color: #854632;
+    font-weight: bold;
+    font-size: 1.1em;
+
+}
+
+.Ingredients li::before {
+    content: "•";
+    color: #854632;
+    position: absolute;
+    left: 0;
+}
+
+
+.Ingredients,
+.Instructions {
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+
+}
+
+table tr {
+    border-bottom: 1px solid #e0e0e0;
+
+}
+
+table tr:last-child {
+    border-bottom: none;
+
+}
+
+table td {
+    padding: 12px 0;
+    font-size: 1em;
+    color: #5a4a42;
+}
+
+table td:first-child {
+    padding-left: 20px;
+    font-weight: normal;
+
+}
+
+table td:last-child {
+    padding-right: 20px;
+    color: #854632;
+    font-weight: bold;
+
+}
